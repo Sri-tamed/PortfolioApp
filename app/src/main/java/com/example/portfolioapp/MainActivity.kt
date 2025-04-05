@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         linkedinBtn.setOnClickListener {
-            openLink("https://www.linkedin.com/in/kishan-garhwal")
+            openLink("https://www.linkedin.com/in/kishan-garhwal-122298331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")
         }
 
         instaBtn.setOnClickListener {
