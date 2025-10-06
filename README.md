@@ -49,8 +49,8 @@ Everyone is welcome to contribute — whether you’re fixing bugs, improving UI
 ### 🖌️ UI Enhancements
 - Improve layout spacing, typography, or color scheme  
 - Add smooth transitions or fade-in animations  
-- Add a splash screen or app icon  
-- Implement light/dark theme toggle  
+- ~~Add a splash screen or app icon~~  
+- ~~Implement light/dark theme toggle~~  
 
 ### 📱 Feature Additions
 - Add a “Contact Me” or “Hire Me” section  
