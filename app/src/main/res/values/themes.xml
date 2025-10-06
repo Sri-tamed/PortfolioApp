@@ -6,4 +6,12 @@
     </style>
 
     <style name="Theme.PortfolioApp" parent="Base.Theme.PortfolioApp" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and destination theme. -->
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.PortfolioApp</item>
+    </style>
 </resources>
