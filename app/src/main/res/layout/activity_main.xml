@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:background="#fdfdfd"
+    android:background="?android:attr/colorBackground"
     android:fitsSystemWindows="true"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <FrameLayout
             android:layout_width="110dp"
@@ -26,9 +26,9 @@
                 android:id="@+id/profileImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/circle_white_bg"
                 android:scaleType="centerCrop"
-                android:src="@drawable/gabipro"
-                android:background="@drawable/circle_white_bg" />
+                android:src="@drawable/gabipro" />
         </FrameLayout>
 
 
@@ -36,37 +36,37 @@
             android:id="@+id/nameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Kishan Garhwal"
-            android:textColor="#111"
-            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
             android:textSize="20sp"
-            android:gravity="center"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/roleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Android Dev Enthusiast"
-            android:textColor="#777"
-            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:layout_marginBottom="20dp"/>
+            android:text="Android Dev Enthusiast"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My Projects"
-            android:textColor="#222"
-            android:textStyle="bold"
-            android:textSize="16sp"
             android:gravity="center"
-            android:paddingBottom="16dp" />
+            android:paddingBottom="16dp"
+            android:text="My Projects"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:layout_marginHorizontal="4dp"
+            android:layout_marginBottom="16dp"
             android:elevation="6dp"
             android:padding="12dp"
             card_view:cardCornerRadius="12dp">
@@ -74,98 +74,32 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Crop Disease Identifier"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="#000" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="An app that identifies crop diseases using image recognition."
-                    android:textSize="14sp"
-                    android:textColor="#555"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginHorizontal="4dp"
-            android:elevation="6dp"
-            android:padding="12dp"
-            card_view:cardCornerRadius="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Marauder’s Pedia"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:textColor="#000" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A Harry Potter encyclopedia app with detailed character info."
-                    android:textSize="14sp"
-                    android:textColor="#555"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginHorizontal="4dp"
-            android:elevation="6dp"
-            android:padding="12dp"
-            card_view:cardCornerRadius="12dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Samrudha - Farmer's App"
-                    android:textColor="#000"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Provides weather, yield prediction and tips for farmers."
-                    android:textSize="14sp"
-                    android:textColor="#555"
-                    android:layout_marginTop="4dp" />
+                    android:layout_marginTop="4dp"
+                    android:text="An app that identifies crop diseases using image recognition."
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="14sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
             android:layout_marginHorizontal="4dp"
+            android:layout_marginBottom="16dp"
             android:elevation="6dp"
             android:padding="12dp"
             card_view:cardCornerRadius="12dp">
@@ -173,164 +107,226 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marauder’s Pedia"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="A Harry Potter encyclopedia app with detailed character info."
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            card_view:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samrudha - Farmer's App"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Provides weather, yield prediction and tips for farmers."
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="6dp"
+            android:padding="12dp"
+            card_view:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SoulScript - A Journal App"
-                    android:textStyle="bold"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="18sp"
-                    android:textColor="#000" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:text="Track your mood and write daily reflections easily."
-                    android:textSize="14sp"
-                    android:textColor="#555"
-                    android:layout_marginTop="4dp" />
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="14sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tech Stack"
-            android:gravity="center"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"
-            android:textColor="#222"
-            android:paddingBottom="8dp" />
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="Tech Stack"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:layout_marginBottom="30dp">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_cpp"
+                android:layout_marginEnd="8dp"
                 android:contentDescription="C++"
-                android:layout_marginEnd="8dp" />
+                android:src="@drawable/ic_cpp" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_c"
+                android:layout_marginEnd="8dp"
                 android:contentDescription="C"
-                android:layout_marginEnd="8dp" />
+                android:src="@drawable/ic_c" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_html"
+                android:layout_marginEnd="8dp"
                 android:contentDescription="HTML"
-                android:layout_marginEnd="8dp" />
+                android:src="@drawable/ic_html" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_css"
+                android:layout_marginEnd="8dp"
                 android:contentDescription="CSS"
-                android:layout_marginEnd="8dp" />
+                android:src="@drawable/ic_css" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/ic_js"
+                android:layout_marginEnd="8dp"
                 android:contentDescription="JavaScript"
-                android:layout_marginEnd="8dp" />
+                android:src="@drawable/ic_js" />
 
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Connect with Me"
             android:gravity="center"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#222"
             android:paddingTop="16dp"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="8dp"
+            android:text="Connect with Me"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/githubButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_github"
-            android:background="@android:color/transparent"
-            android:contentDescription="GitHub Profile"
-            android:scaleType="centerInside"
-            android:layout_marginEnd="14dp"
-            />
+            <ImageButton
+                android:id="@+id/githubButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="GitHub Profile"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_github" />
 
-        <ImageButton
-            android:id="@+id/emailButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_gmail"
-            android:background="@android:color/transparent"
-            android:contentDescription="Email"
-            android:scaleType="centerInside"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginTop="5dp"
-            />
+            <ImageButton
+                android:id="@+id/emailButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Email"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_gmail" />
 
-        <ImageButton
-            android:id="@+id/linkedinButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_linkedin"
-            android:background="@android:color/transparent"
-            android:contentDescription="Linkedin"
-            android:scaleType="centerInside"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginTop="5dp"
-            />
+            <ImageButton
+                android:id="@+id/linkedinButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Linkedin"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_linkedin" />
 
-        <ImageButton
-            android:id="@+id/instaButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_instagram"
-            android:background="@android:color/transparent"
-            android:contentDescription="Linkedin"
-            android:scaleType="centerInside"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginTop="5dp"
-            />
+            <ImageButton
+                android:id="@+id/instaButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Linkedin"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_instagram" />
 
-    </LinearLayout>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Made with ❤️ by Kishan"
             android:gravity="center"
-            android:textSize="13sp"
-            android:textColor="#999"
             android:paddingTop="40dp"
-            android:paddingBottom="8dp" />
+            android:paddingBottom="8dp"
+            android:text="Made with ❤️ by Kishan"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="13sp" />
     </LinearLayout>
 </ScrollView>
